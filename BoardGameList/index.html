@@ -8,6 +8,10 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
     <link href="assets/css/style_1.css" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://raw.githubusercontent.com/s-yadav/angulargrid/master/angulargrid.js"></script
+    <script src="pinterest_grid.js"></script>
+
+    <title>Board Game App</title>
 </head>
 
 <body>
@@ -17,12 +21,12 @@
                 <h1>Best Board Game List</h1>
             </div>
         </div>
-        
+
         <div class="main">
             <div class="container">
                 <h2> Filter: </h2>
                 <div class="row">
-                    <div ng-repeat="game in games" id="image_cols" class="col-md-6 col-lg-4 col-sm-6 col-xs-12">
+                    <div ng-repeat="game in games" id="image_cols" class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                         <div class="thumbnail">
                             <img class="img-responsive" ng-src="{{ game.cover }}">
                             <p class="title"><a href="#ShowOrder/'{{game.id}}'"> {{ game.name }} </a></p>
@@ -42,7 +46,6 @@
         </div>
         
     </div>
-
     <script src="myBGApp.js"></script>
     <script src="myBGCtrl.js"></script>
 
